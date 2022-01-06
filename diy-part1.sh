@@ -18,3 +18,7 @@ echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.defau
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 # luci-theme-infinityfreedom
 echo 'src-git infinityfreedom https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git' >>feeds.conf.default
+# Add cpufreq
+rm -rf package/lean/luci-app-cpufreq
+svn co https://github.com/immortalwrt/luci/trunk/applications/luci-app-cpufreq feeds/luci/applications/luci-app-cpufreq
+ln -sf ../../../feeds/luci/applications/luci-app-cpufreq ./package/feeds/luci/luci-app-cpufreq
