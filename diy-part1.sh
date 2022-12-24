@@ -20,7 +20,7 @@ echo 'src-git passwall_luci https://github.com/xiaorouji/openwrt-passwall.git;lu
 # luci-theme-infinityfreedom
 echo 'src-git infinityfreedom https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom.git' >>feeds.conf.default
 # luci-theme-neobird
-echo 'src-git luci-theme-neobird https://github.com/thinktip/luci-theme-neobird.git' >>feeds.conf.default
+echo 'src-git neobird https://github.com/thinktip/luci-theme-neobird.git' >>feeds.conf.default
 
 # Add cpufreq
 #rm -rf package/lean/luci-app-cpufreq
